@@ -511,8 +511,10 @@ body {
 }
 
 .method-figure {
+  background: #ffffff;
   margin: -0.2rem auto 1.8rem;
   max-width: 960px;
+  padding: 0 1.25rem;
 }
 
 .method-figure img {
@@ -522,6 +524,13 @@ body {
   display: block;
   height: auto;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .method-figure {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }
 
 .method-grid {
