@@ -453,13 +453,22 @@ body {
 
 .hero-media {
   border: 0;
-  border-radius: 20px;
+  border-radius: 0;
   box-shadow: none;
   margin: 0 auto;
   max-width: 960px;
+  overflow: visible;
 }
 
-.hero-media img,
+.hero-media img {
+  background: #ffffff;
+  border: 0;
+  border-radius: 0;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
 .application-video video,
 .dataset-videos video {
   background: #ffffff;
@@ -509,7 +518,7 @@ body {
 .method-figure img {
   background: #ffffff;
   border: 1px solid #eeeeee;
-  border-radius: 12px;
+  border-radius: 0;
   display: block;
   height: auto;
   width: 100%;
@@ -701,8 +710,6 @@ body {
     width: 100%;
   }
 
-  .hero-media img,
-  .method-figure img,
   .application-video video,
   .dataset-videos video {
     border-radius: 10px;

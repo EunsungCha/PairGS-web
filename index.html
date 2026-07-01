@@ -60,10 +60,10 @@
                 <a href="mailto:ender3553@snu.ac.kr">Eunsung Cha</a><sup>*</sup>
               </span>
               <span class="author-block">
-                <a href="mailto:hjlee4772@snu.ac.kr">Hyunjoon Lee</a><sup>*</sup>
+                <a href="https://jjoonii.github.io/">Hyunjoon Lee</a><sup>*</sup>
               </span>
               <span class="author-block">
-                <a href="mailto:jaesik.park@snu.ac.kr">Jaesik Park</a><sup>&dagger;</sup>
+                <a href="https://jaesik.info/">Jaesik Park</a><sup>&dagger;</sup>
               </span>
             </div>
             <div class="publication-affiliation">
@@ -114,18 +114,26 @@
           <h2 class="title is-3 section-title">Abstract</h2>
           <div class="content has-text-justified publication-body">
             <p>
-              Open-vocabulary 3D Gaussian segmentation aims to select 3D Gaussians from free-form
-              language queries while keeping object boundaries clean. Existing methods often attach
-              language features to individual Gaussians or optimize instance features for each scene,
-              which can lead to noisy masks or expensive per-scene training.
+              Open-vocabulary 3D Gaussian segmentation is challenging because it requires language
+              understanding for diverse queries and accurate separation of Gaussians along object
+              boundaries. Prior approaches either embed language knowledge into individual Gaussians
+              to improve query responsiveness or optimize per-Gaussian instance features to encode
+              object identity. However, these strategies may produce noisy Gaussian segmentations
+              or rely on cost-inefficient per-scene optimization.
             </p>
             <p>
-              <strong>PairGS</strong> takes a simpler view: segmentation is <strong>relation estimation</strong>
-              between Gaussians. It builds a sparse relation graph from 3DGS cues, computes pairwise
-              affinities only for likely edges, and organizes the resulting clusters into a hierarchy
-              for multi-granular queries. This enables training-free open-vocabulary segmentation with
-              strong accuracy, while the fast variant is 50x faster than optimization-based
-              instance-feature approaches.
+              We propose <strong>PairGS</strong>, a framework that reframes Gaussian segmentation as
+              modeling pairwise relations between Gaussians. 3D Gaussian representations provide rich
+              signals for relation estimation, such as view contribution weights and multi-view mask
+              evidence. By leveraging these cues, PairGS explicitly constructs a relation graph for
+              segmentation without a heavy optimization process.
+            </p>
+            <p>
+              PairGS first proposes sparse edge candidates using low-dimensional descriptors, computes
+              precise pairwise affinities only on those candidates, and builds a hierarchical cluster
+              tree for multi-granular querying. It achieves state-of-the-art results on open-vocabulary
+              3D Gaussian segmentation benchmarks, while the fast variant is 50x faster than
+              optimization-based instance-feature approaches.
             </p>
           </div>
         </div>
@@ -256,7 +264,7 @@
         Language-selected 3D Gaussians are converted into a point cloud for downstream grasp generation.
       </p>
       <div class="application-video">
-        <video controls muted loop playsinline preload="metadata">
+        <video autoplay controls muted loop playsinline preload="metadata">
           <source src="./static/videos/robot_demo.mp4" type="video/mp4">
         </video>
       </div>
