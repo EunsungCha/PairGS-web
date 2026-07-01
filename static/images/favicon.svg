@@ -1,8 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <rect width="128" height="128" rx="22" fill="#162027"/>
-  <circle cx="34" cy="38" r="9" fill="#d78754"/>
-  <circle cx="72" cy="29" r="7" fill="#6aa39b"/>
-  <circle cx="95" cy="68" r="8" fill="#f1c46a"/>
-  <path d="M34 38 L72 29 L95 68 L58 92 Z" fill="none" stroke="#dfe8ea" stroke-width="7" stroke-linejoin="round"/>
-  <text x="64" y="76" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#ffffff">PG</text>
+  <defs>
+    <linearGradient id="thin-left" x1="24" y1="24" x2="74" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8fb0ee"/>
+      <stop offset="1" stop-color="#557fc4"/>
+    </linearGradient>
+    <linearGradient id="thin-right" x1="54" y1="36" x2="108" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#79bfb5"/>
+      <stop offset="1" stop-color="#00a88f"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="43" cy="62" rx="21" ry="36" transform="rotate(-20 43 62)" fill="url(#thin-left)"/>
+  <ellipse cx="85" cy="66" rx="36" ry="21" transform="rotate(-20 85 66)" fill="url(#thin-right)"/>
+  <path d="M50 64H78" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+  <path d="M51 64H77" fill="none" stroke="#10232f" stroke-width="4" stroke-linecap="round"/>
 </svg>
