@@ -514,20 +514,21 @@ body {
   background: #ffffff;
   margin: -0.2rem auto 1.8rem;
   max-width: 960px;
-  padding: 0 1.25rem;
 }
 
 .method-figure img {
   background: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 0;
+  box-sizing: border-box;
   display: block;
   height: auto;
+  padding: 0 1.25rem;
   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  .method-figure {
+  .method-figure img {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
