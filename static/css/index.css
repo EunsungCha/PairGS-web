@@ -444,6 +444,17 @@ body {
   transform: translateY(-2px);
 }
 
+.publication-links .button.is-disabled {
+  cursor: default;
+  opacity: 0.82;
+  pointer-events: none;
+}
+
+.publication-links .button.is-disabled:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: none;
+}
+
 .publication-links .button:nth-child(1) {
   background: linear-gradient(45deg, #1281a7, #0b5067);
 }
