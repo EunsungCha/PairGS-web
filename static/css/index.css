@@ -96,6 +96,16 @@ a:hover {
   margin-top: 0.25rem;
 }
 
+.conference-badge {
+  color: #009b9b;
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  margin-top: 0.45rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.35px currentColor;
+}
+
 .publication-links {
   display: flex;
   flex-wrap: wrap;
